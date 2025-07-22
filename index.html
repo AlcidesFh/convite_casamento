@@ -2,79 +2,54 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>Convite de Casamento - Alcides & Andreza</title>
+  <title>Alcides & Andreza — Nosso Casamento</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background-color: #f8f1e4;
-      font-family: 'Georgia', serif;
-      color: #4e342e;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
     }
 
     .container {
-      max-width: 700px;
-      margin: auto;
-      padding: 20px;
+      position: relative;
       text-align: center;
-    }
-
-    .imagem {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-
-    h1 {
-      font-family: 'Brush Script MT', cursive;
-      font-size: 48px;
-      margin: 30px 0 10px;
-      color: #6d4c41;
-    }
-
-    p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      background-color: #795548;
       color: white;
-      padding: 15px 30px;
+    }
+
+    .imagem-fundo {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .botao-convite {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #6b4226;
+      color: #fff;
+      padding: 14px 28px;
       font-size: 18px;
       border: none;
-      border-radius: 30px;
-      text-decoration: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
       transition: background-color 0.3s ease;
     }
 
-    .btn:hover {
-      background-color: #5d4037;
-    }
-
-    footer {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #8d6e63;
+    .botao-convite:hover {
+      background-color: #8c5a3c;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="Convite_casamento/images/Imagem2.jpg" alt="Convite Casamento Alcides e Andreza" class="imagem" />
-
-    <h1>Alcides & Andreza</h1>
-    <p>Com muita alegria convidamos você para o nosso casamento!</p>
-    <p>📍 Estrada São Francisco, 14 - Cabreúva - Chácara dos Sonhos<br>
-       📅 22 de novembro de 2025 às 15:00</p>
-
-    <a class="btn" href="https://alcidesfh.github.io/convite_casamento/" target="_blank">
+    <img src="Imagem2.jpg" alt="Convite de Casamento" class="imagem-fundo" />
+    <button class="botao-convite" onclick="window.location.href='https://forms.gle/7rDUcTFPVtRUtmuH9'">
       Confirmar Presença
-    </a>
-
-    <footer>
-      Convite digital com carinho 🌿
-    </footer>
+    </button>
   </div>
 </body>
 </html>
