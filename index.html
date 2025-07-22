@@ -1,32 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Convite de Casamento - Alcides e Andreza</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Convite de Casamento - Alcides & Andreza</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f8f1e4;
+      font-family: 'Georgia', serif;
+      color: #4e342e;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .imagem {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 48px;
+      margin: 30px 0 10px;
+      color: #6d4c41;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background-color: #795548;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #5d4037;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #8d6e63;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <h1>Alcides ❤️ Andreza</h1>
-    <p class="mensagem">
-      Estão prestes a dizer "Sim!" e você é nosso convidado especial!<br>
-      Venha celebrar esse momento incrível conosco!
-    </p>
-    <div class="detalhes">
-      <p><strong>Data:</strong> 22/11/2025 às 15h</p>
-      <p><strong>Local:</strong> Chácara dos Sonhos - Estrada São Francisco, 14, Cabreúva - SP</p>
-    </div>
+    <img src="Imagem2.jpg" alt="Convite Casamento Alcides e Andreza" class="imagem" />
 
-    <h2>Confirme sua presença</h2>
-    <form id="formConfirmacao">
-      <input type="text" id="nome" placeholder="Seu nome completo" required>
-      <input type="tel" id="telefone" placeholder="DDD + número (somente números)" required>
-      <button type="submit">Confirmar Presença</button>
-    </form>
-    <p id="mensagemConfirmacao" class="confirmado"></p>
+    <h1>Alcides & Andreza</h1>
+    <p>Com muita alegria convidamos você para o nosso casamento!</p>
+    <p>📍 Estrada São Francisco, 14 - Cabreúva - Chácara dos Sonhos<br>
+       📅 22 de novembro de 2025 às 15:00</p>
+
+    <a class="btn" href="https://alcidesfh.github.io/convite_casamento/" target="_blank">
+      Confirmar Presença
+    </a>
+
+    <footer>
+      Convite digital com carinho 🌿
+    </footer>
   </div>
-  <script src="script.js"></script>
 </body>
 </html>
-
