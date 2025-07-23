@@ -1,22 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Convite de Casamento - Alcides e Andreza</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Alcides & Andreza — Nosso Casamento</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .imagem-fundo {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .botao-convite {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #6b4226;
+      color: #fff;
+      padding: 14px 28px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+    }
+
+    .botao-convite:hover {
+      background-color: #8c5a3c;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <img class="imagem-fundo" src="Imagem5.jpg" alt="Convite de Casamento">
-    <h2><span class="titulo">Confirme sua presença</span></h2>
-    <form id="formConfirmacao">
-      <input type="text" id="nome" placeholder="Seu nome completo" required>
-      <input type="tel" id="telefone" placeholder="DDD + número (somente números)" required>
-      <button type="submit">Confirmar Presença</button>
-    </form>
-    <p id="mensagemConfirmacao" class="confirmado"></p>
+    <img src="Imagem2.jpg" alt="Convite de Casamento" class="imagem-fundo" />
+    <button class="botao-convite" onclick="window.location.href='https://forms.gle/7rDUcTFPVtRUtmuH9'">
+      Confirmar Presença
+    </button>
   </div>
-  <script src="script.js"></script>
 </body>
 </html>
