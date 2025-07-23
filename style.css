@@ -1,59 +1,46 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #f5f5dc;
-  text-align: center;
-  margin: 0;
-  padding: 50px 20px;
-  color: #4e342e;
-}
-
 .container {
-  background: #fffaf0;
-  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff8f0;
   border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  margin: auto;
-  border: 3px dashed #a1887f;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-h1 {
-  color: #6d4c41;
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
+.imagem-fundo {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
-.mensagem {
-  font-size: 1.1em;
-  margin-bottom: 1.5em;
-}
-
-.detalhes p {
-  margin: 0.5em 0;
-  font-size: 1em;
-}
-
-input, button {
-  padding: 10px;
-  margin: 10px 0;
+input {
+  display: block;
   width: 90%;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 6px;
   border: 1px solid #ccc;
-  border-radius: 5px;
 }
 
 button {
-  background-color: #6d4c41;
+  padding: 10px 20px;
+  background-color: #8b5e3c;
   color: white;
-  font-weight: bold;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #8d6e63;
+  background-color: #a97456;
 }
 
 .confirmado {
-  color: green;
+  margin-top: 20px;
   font-weight: bold;
-  margin-top: 1em;
+  color: green;
 }
