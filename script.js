@@ -36,5 +36,6 @@ form.addEventListener('submit', function(event) {
   // Marca presença e abre WhatsApp
   localStorage.setItem("confirmado_" + telefone, true);
   mensagem.textContent = "Presença confirmada! Aguardamos você! 🎉";
+  mensagem.style.color = 'white';
   window.open(url, "_blank");
 });
