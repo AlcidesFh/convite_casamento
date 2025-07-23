@@ -1,44 +1,40 @@
-document.getElementById('formConfirmacao').addEventListener('submit', function(event) {
+const form = document.getElementById('formConfirmacao');
+const botao = form.querySelector("button");
+
+form.addEventListener('submit', function(event) {
   event.preventDefault();
 
-  var nome = document.getElementById('nome').value.trim();
-  var telefone = document.getElementById('telefone').value.trim();
-  var mensagem = document.getElementById('mensagemConfirmacao');
+  // Impede segundo envio se já estiver submetendo
+  if (form.classList.contains('is-submitting')) return;
 
+  const nome = document.getElementById('nome').value.trim();
+  const telefone = document.getElementById('telefone').value.trim();
+  const mensagem = document.getElementById('mensagemConfirmacao');
+
+  // Validações
   if (nome === '' || telefone.length < 10) {
     mensagem.textContent = 'Por favor, preencha todos os campos corretamente.';
     mensagem.style.color = 'red';
     return;
   }
 
-  // Confirmação simulada
-  mensagem.textContent = 'Presença confirmada com sucesso! 🎉';
+  // Marca como em submissão
+  form.classList.add('is-submitting');
+  botao.disabled = true;
 
-  // Redireciona após alguns segundos para uma página personalizada
-  setTimeout(function() {
-    window.location.href = 'confirmado.html';
-  }, 3000);
-});
-
-document.getElementById("formConfirmacao").addEventListener("submit", function(event) {
-  event.preventDefault();
-
-  const nome = document.getElementById("nome").value.trim();
-  const telefone = document.getElementById("telefone").value.trim();
-  const botao = document.querySelector("button");
-
+  // Verifica confirmação anterior
   if (localStorage.getItem("confirmado_" + telefone)) {
-    document.getElementById("mensagemConfirmacao").innerText = "Você já confirmou presença. Obrigado!";
+    mensagem.textContent = "Você já confirmou presença. Obrigado!";
     return;
   }
 
-  const msg = `Olá! Eu confirmo minha presença no casamento de Alcides e Andreza. Meu nome é ${nome}.`;
-  const numeroDestino = "5511981284618"; // ex: 5511999999999
+  // Prepara mensagem e WhatsApp
+  const msg = `Olá! Eu confirmo minha presença no casamento de Andreza e Alcides. Meu nome é ${nome}.`;
+  const numeroDestino = "5511981284618";
   const url = `https://wa.me/${numeroDestino}?text=${encodeURIComponent(msg)}`;
 
+  // Marca presença e abre WhatsApp
   localStorage.setItem("confirmado_" + telefone, true);
-  document.getElementById("mensagemConfirmacao").innerText = "Presença confirmada! Aguardamos você! 🎉";
-
-  botao.disabled = true;
+  mensagem.textContent = "Presença confirmada! Aguardamos você! 🎉";
   window.open(url, "_blank");
 });
