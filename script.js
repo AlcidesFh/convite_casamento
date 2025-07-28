@@ -29,7 +29,7 @@ form.addEventListener('submit', function(event) {
   }
 
   // Prepara mensagem e WhatsApp
-  const msg = `Olá! Eu confirmo minha presença no casamento de Andreza e Alcides. Meu nome é ${nome}.`;
+  const msg = `Olá! Eu confirmo minha presença. Meu nome é ${nome}.`;
   const numeroDestino = "5511981284618";
   const url = `https://wa.me/${numeroDestino}?text=${encodeURIComponent(msg)}`;
 
