@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convite de Casamento - Alcides e Andreza</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .form-container {
+      display: none;
+      margin-top: 20px;
+    }
+
+    .btn-revelar {
+      padding: 12px 24px;
+      background-color: #8b5e3c;
+      color: white;
+      /* border: none;*/
+      border: 1px solid #f1efec;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      
+    }
+
+    .btn-revelar:hover {
+      background-color: #64422e;
+      
+
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="Imagem6.jpg" alt="Convite de Casamento" class="imagem-fundo">
+
+    <!-- Botão que revela o formulário -->
+    <button id="btnMostrarForm" class="btn-revelar">Confirmar Presença</button>
+
+    <!-- Google Forms inicialmente oculto -->
+    <div class="form-container" id="formContainer">
+      <iframe 
+        src="https://docs.google.com/forms/d/e/1FAIpQLSddU7KEE0VZJd8wp8v3qzqW_rrlS86bFEQXWkFs_obYEx759g/viewform?embedded=true" 
+        width="100%" 
+        height="700" 
+        frameborder="0" 
+        marginheight="0" 
+        marginwidth="0">
+        Carregando…
+      </iframe>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("btnMostrarForm").addEventListener("click", function () {
+      document.getElementById("formContainer").style.display = "block";
+      this.style.display = "none"; // Oculta o botão após clique
+    });
+  </script>
+</body>
+</html>
