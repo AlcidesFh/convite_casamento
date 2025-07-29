@@ -3,7 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <img src="logo.jpg" alt="Logo" class="logo-casamento">
+  
+  <!-- Preview social / WhatsApp -->
+  <meta property="og:title" content="Convite de Casamento – Andreza e Alcides" />
+  <meta property="og:description" content="Você é nosso convidado especial! Confirme sua presença acessando o link." />
+  <meta property="og:image" content="https://alcidesfh.github.io/convite_casamento/preview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://alcidesfh.github.io/convite_casamento/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon (ícone da aba do navegador) -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
   <title>Convite de Casamento - Andreza e Alcides</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -14,7 +26,6 @@
     <form id="formConfirmacao">
       <input type="text" id="nome" placeholder="Seu nome completo" required>
       <input type="tel" id="telefone" placeholder="DDD + número (somente números)" required>
-      <!--- <button type="submit">Confirmar Presença</button> -->
       <button id="btnMostrarForm" class="btn-revelar">Confirmar Presença</button>
     </form>
     <p id="mensagemConfirmacao" class="confirmado"></p>
