@@ -76,9 +76,11 @@ button:hover {
   margin-right: 6px;
   font-size: 1.2em; /* tamanho ajustado */
   vertical-align: middle;
+  
 }
 .btn-revelar {
   display: inline-flex;
   align-items: center;
   padding: 8px 12px;
+  margin: 2px;
 }
